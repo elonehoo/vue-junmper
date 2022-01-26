@@ -1,6 +1,7 @@
 {
   "name": "vue-jumper",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage": "https://xiaoxunyao.github.io/vue-junmper",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
