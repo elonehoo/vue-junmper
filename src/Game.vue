@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  import { onMounted,onBeforeMount,nextTick } from 'vue'
+  import { onMounted,nextTick } from 'vue'
+  import { Vector3 } from './Vector3'
 
   const oninitCanvas = () => {
             nextTick(() => {
@@ -730,26 +731,7 @@
               const ClampAngle = (a) => (a+Math.PI) % (2*Math.PI) + (a+Math.PI<0? Math.PI : -Math.PI);
               const Lerp = (p, a, b) => a + Clamp(p, 0, 1) * (b-a);
               const Random = (max=1, min=0) => Lerp((Math.sin(++randomSeed)+1)*1e5%1, min, max);
-                
-              /////////////////////////////////////////////////////////////////////////////////////
-              // simple 3d vector class
-              /////////////////////////////////////////////////////////////////////////////////////
-              class Vector3 {
-                  constructor(x=0, y=0, z=0) { 
-                      this.x = x; 
-                      this.y = y; 
-                      this.z = z 
-                  }
-                Add(v)      { 
-                      v = isNaN(v) ? v : new Vector3(v,v,v); 
-                      return new Vector3( this.x + v.x, this.y + v.y, this.z + v.z); 
-                  }
-                Multiply(v) { 
-                      v = isNaN(v) ? v : new Vector3(v,v,v); 
-                      return new Vector3( this.x * v.x, this.y * v.y, this.z * v.z); 
-                  }
-              }
-
+               
               /////////////////////////////////////////////////////////////////////////////////////
               // draw a trapazoid shaped poly
               /////////////////////////////////////////////////////////////////////////////////////
