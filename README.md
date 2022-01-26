@@ -2,6 +2,8 @@
 
 <div align="center"><h1>vue-jumper</h1></div>
 
+[live demo](https://xiaoxunyao.github.io/vue-junmper/)
+
 ## Controls
 - Mouse = Steer
 - Click = Brake
