@@ -1,4 +1,6 @@
+<div align="center">
 ![logo](images/logo.svg)
+</div>
 
 <div align="center"><h1>vue-jumper</h1></div>
 
