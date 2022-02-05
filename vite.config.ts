@@ -3,7 +3,8 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: process.env.NODE_ENV === "production" ? '/vue-junmper/' : '/',
+// 	base: process.env.NODE_ENV === "production" ? '/vue-junmper/' : '/',
+	base: '/',
     plugins: [vue()],
 	build: {
 		outDir: "dist",
