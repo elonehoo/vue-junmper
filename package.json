@@ -8,11 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.34"
+    "vue": "^3.4.35"
   },
   "devDependencies": {
-    "@types/node": "^20.14.13",
-    "@vitejs/plugin-vue": "^5.1.1",
+    "@types/node": "^20.14.14",
+    "@vitejs/plugin-vue": "^5.1.2",
     "vite": "^5.3.5"
   }
 }
